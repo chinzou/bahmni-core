@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.bahmni.module</groupId>
         <artifactId>bahmni</artifactId>
-        <version>0.93-1.1.0-SNAPSHOT</version>
+        <version>0.93-1.1.0</version>
     </parent>
     <artifactId>bahmnicore-omod</artifactId>
     <packaging>jar</packaging>
@@ -26,13 +26,13 @@
         <dependency>
             <groupId>org.openmrs.module</groupId>
             <artifactId>episodes-api</artifactId>
-            <version>${episodes.version}</version>
+            <version>${forkedEpisodesVersion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.bahmni.module</groupId>
             <artifactId>mail-appender</artifactId>
-            <version>${bahmniJavaUtilsVersion}</version>
+            <version>${forkedBahmniJavaUtilsVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.openmrs.module</groupId>
@@ -69,12 +69,12 @@
         <dependency>
             <groupId>org.bahmni.module</groupId>
             <artifactId>common</artifactId>
-            <version>${bahmniJavaUtilsVersion}</version>
+            <version>${forkedBahmniJavaUtilsVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.bahmni.module</groupId>
             <artifactId>file-uploader</artifactId>
-            <version>${bahmniJavaUtilsVersion}</version>
+            <version>${forkedBahmniJavaUtilsVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.bahmni.module</groupId>
@@ -251,13 +251,13 @@
         <dependency>
             <groupId>org.openmrs.module</groupId>
             <artifactId>rulesengine-api</artifactId>
-            <version>${rulesEngineVersion}</version>
+            <version>${forkedRulesengineVersion}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.openmrs.module</groupId>
             <artifactId>rulesengine-api</artifactId>
-            <version>${rulesEngineVersion}</version>
+            <version>${forkedRulesengineVersion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
